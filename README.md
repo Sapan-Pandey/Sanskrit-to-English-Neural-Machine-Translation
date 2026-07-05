@@ -6,12 +6,14 @@ Bahdanau Attention: Bahdanau Attention computes attention scores between the enc
 
 Decoder: The decoder in LSTM is an LSTM that outputs one token in English per step based on the previous token, the state of the decoder, and the context vector of the attention. 
 Beam Search: To improve the translation quality over greedy decoding, during inference beam search (with beam width = 5) is used to keep multiple candidate translations.
+
 3. Training Procedure
 Normalization, validation and alignment with Source_id: Unicode normalization, Whitespaces normalization, Sentence validation. 
 Tokenizer: SentencePiece BPE tokenizer with the provided Sanskrit Training Corpus. English vocabulary learned from the training data with <PAD>, <SOS>, <EOS> and <UNK> tokens. 
 Hyperparameters: 
 Embedding=256, Hidden=512, Layers=2, Dropout=0.3, Batch Size=64, Epochs=30, Learning Rate=0.001, Optimizer=Adam, Beam Width=5. 
 Optimization & Regularization: Cross-Entropy Loss, Teacher Forcing, Gradient Clipping, Xavier Initialization, Early Stopping and Dropout.
+
 4. Results
 
 Inference Time (seconds): 3.6618924140930176
