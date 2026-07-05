@@ -40,6 +40,8 @@ Future Work: Investigate Transformers architectures, multilingual pretraining, l
 [2] Neural Machine Translation by Jointly Learning to Align and Translate, ICLR, 2015,Bahdanau, Cho, Bengio. 
 [3] Kudo and Richardson (SentencePiece, EMNLP, 2018). 
 [4] BLEU: A Method for Automatic Evaluation of Machine Translation, ACL 2002, Papineni et al.
-Pre-trained Model Disclosure
+
+9.Pre-trained Model Disclosure
+
 No translation models have been pre-trained for training or inference. The model Seq2Seq (Bidirectional LSTM Encoder, Bahdanau Attention, LSTM Decoder) was trained from scratch, using just the given dataset. A training corpus was given to SentencePiece for training it to tokenize the sentences. The BERTScore was evaluated using a pre-trained BERT model, but was not used to generate translations.
 <img width="432" height="655" alt="image" src="https://github.com/user-attachments/assets/7ca289b2-a83f-4128-8092-1a4369987d06" />
