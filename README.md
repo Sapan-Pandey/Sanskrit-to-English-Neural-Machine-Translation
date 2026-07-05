@@ -2,7 +2,7 @@
     
 Neural Machine Translation (NMT) is a deep learning approach to the translation of text from one language to another. This is a customized Sequence-to-Sequence (Seq2Seq) model for Sanskrit-to-English translation using only available parallel corpus. The word order and complex grammar of Sanskrit is flexible and translation is challenging, because it is a morphologically rich and low-resource language. The aim is to obtain precise English translations and to test the system via BLEU, BERTScore, inference time and model parameters.
 
-3. Architecture
+2. Architecture
 Invariant Input: The input is given as Sanskrit token embeddings
 Bahdanau Attention: Bahdanau Attention computes attention scores between the encoder states and the current decoder state and thus drives the decoder to attend to relevant source words.
 
